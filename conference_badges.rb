@@ -17,3 +17,5 @@ def assign_rooms(attendees)
     hash[attendee] = index
 end
 end
+attendees = ["Edsger", "Ada", "Charles", "Alan", "Grace", "Linus","Matz"]
+assign_rooms(attendees)
