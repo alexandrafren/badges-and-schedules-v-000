@@ -20,6 +20,8 @@ end
 end
 
 def printer(attendees)
+  counter = 0
+  while counter < attendees.length
   attendees.each do |attendee|
     puts batch_badge_creator(attendee)
     puts assign_rooms(attendee)
