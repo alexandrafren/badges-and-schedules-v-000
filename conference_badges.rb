@@ -20,6 +20,5 @@ end
 end
 
 def printer(attendees)
-counter = 0
   puts batch_badge_creator()
 end
