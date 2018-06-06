@@ -12,8 +12,10 @@ def batch_badge_creator(attendees)
 end
 
 def assign_rooms(attendees)
+  counter
   hash = Hash.new
   attendees.each_with_index do |attendee, index|
-    hash[index] = "Hello, #{attendee}! You'll be assigned to room #{index + 1}!"
+    hash[counter] = "Hello, #{attendee}! You'll be assigned to room #{index + 1}!"
+    counter += 1
 end
 end
