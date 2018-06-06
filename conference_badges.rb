@@ -20,11 +20,10 @@ end
 end
 
 def printer(attendees)
-  counter = 0
-  while counter < attendees.length
-    puts batch_badge_creator(attendees[counter])
-    puts assign_rooms(attendees[counter])
-    counter += 1
+  attendees.each do |attendee|
+    puts batch_badge_creator(attendee)
   end
-
+  attendees.each do |attendee|
+    puts assign_rooms(attendee)
+  end
 end
