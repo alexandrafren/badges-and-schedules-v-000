@@ -10,3 +10,9 @@ def batch_badge_creator(attendees)
     counter += 1
   end
 end
+
+def assign_rooms(attendees)
+  hash = Hash.new
+  attendees.each_with_index do |attendee, index|
+    hash[attendee] = index
+end
