@@ -16,3 +16,4 @@ def assign_rooms(attendees)
   attendees.each_with_index do |attendee, index|
     hash[attendee] = index
 end
+end
