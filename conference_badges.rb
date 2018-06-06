@@ -13,9 +13,8 @@ end
 
 def assign_rooms(attendees)
   counter = 0
-  hash = Hash.new
-  attendees.each_with_index do |attendee, index|
-    hash[counter] = "Hello, #{attendee}! You'll be assigned to room #{index + 1}!"
+  attendees.each do |attendee|
+    attendees[counter] = "Hello, #{attendee}! You'll be assigned to room #{index + 1}!"
     counter += 1
 end
 end
